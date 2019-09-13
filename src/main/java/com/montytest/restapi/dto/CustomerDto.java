@@ -1,12 +1,20 @@
 package com.montytest.restapi.dto;
 
+import javax.validation.constraints.NotBlank;
+
 public class CustomerDto {
 	private Long id;
+	@NotBlank(message = "First Name can not be left blank")
 	private String firstName;
+	@NotBlank(message = "Last Name can not be left blank")
 	private String lastName;
+	@NotBlank(message = "Email can not be left blank")
 	private String email;
+	@NotBlank(message = "Mobile Number can not be left blank")
 	private String mobileNumber;
+	@NotBlank(message = "Country can not be left blank")
 	private String country;
+	@NotBlank(message = "Province can not be left blank")
 	private String province;
 	private String notes;
 	
@@ -81,6 +89,13 @@ public class CustomerDto {
 	}
 	public void setNotes(String notes) {
 		this.notes = notes;
+	}
+	
+	@Override
+	public String toString() {
+		return "CustomerDto [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
+				+ ", mobileNumber=" + mobileNumber + ", country=" + country + ", province=" + province + ", notes="
+				+ notes + "]";
 	}
 	
 	

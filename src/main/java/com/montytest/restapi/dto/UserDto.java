@@ -12,6 +12,14 @@ public class UserDto {
     private String password;
     
 
+    public UserDto() {}
+	public UserDto(@NotBlank @Size(min = 4, max = 40) String username,
+			@NotBlank @Size(min = 6, max = 20) String password) {
+		super();
+		this.username = username;
+		this.password = password;
+	}
+
 	public String getUsername() {
 		return username;
 	}

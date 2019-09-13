@@ -46,7 +46,7 @@ public class DBConfiguration {
 	    hikariConfig.setMaximumPoolSize(500);
 	    hikariConfig.setMinimumIdle(5);
 	    hikariConfig.setConnectionTestQuery("SELECT 1");
-	    hikariConfig.setPoolName("safaripayCP");
+	    hikariConfig.setPoolName("montyCP");
 
 	    hikariConfig.addDataSourceProperty("dataSource.cachePrepStmts", "true");
 	    hikariConfig.addDataSourceProperty("dataSource.prepStmtCacheSize", "250");

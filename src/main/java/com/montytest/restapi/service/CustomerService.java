@@ -7,6 +7,7 @@ import com.montytest.restapi.model.Customer;
 public interface CustomerService {
 	public void saveCustomer(Customer customer);
 	public void updateCustomer(Customer customer);
+	public void deleteCustomer(long id);
 	public Customer getCustomer(Long id);
 	public List<Customer> getAllCustomers();
 }
